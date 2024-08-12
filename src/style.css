@@ -1,0 +1,26 @@
+#my_app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 1rem;
+	background-image: url('assets/pattern_background2.jpg');
+	background-size: contain;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	border: none;
+	outline: none;
+}
+
+@media(max-width: 425px) {
+	.container {
+		max-width: 360px;
+	}
+}

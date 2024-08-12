@@ -1,0 +1,70 @@
+{
+	"Cucina": [
+		"Sushi",
+		"Italiano",
+		"Pizzeria",
+		"Fast Food",
+		"Steak House",
+		"Asiatico",
+		"Panineria",
+		"Arabo",
+		"Vegetariano",
+		"Messicano",
+		"Greco",
+		"Kebab"
+	],
+	"Sport": [
+		"Calcio",
+		"Basket",
+		"Tennis",
+		"Golf",
+		"Nuoto",
+		"Pallavolo",
+		"Rugby",
+		"Ciclismo",
+		"Atletica",
+		"Boxe",
+		"Scherma",
+		"Escursionismo",
+		"Judo"
+	],
+	"Film": [
+		"Azione",
+		"Commedia",
+		"Drammatico",
+		"Horror",
+		"Fantascienza",
+		"Romantico",
+		"Thriller",
+		"Avventura",
+		"Musical",
+		"Documentario",
+		"Biografico",
+		"Noir",
+		"Fantasy",
+		"Storico",
+		"Animazione"
+	],
+	"Musica": [
+		"Rock",
+		"Pop",
+		"Jazz",
+		"Classica",
+		"Blues",
+		"Hip Hop",
+		"Reggae",
+		"Country",
+		"Elettronica",
+		"Metal"
+	],
+	"ArticoliBlog": [
+		"Come Aprire il Tuo Sito WordPress",
+		"Design e CSS: guida introduttiva",
+		"Introduzione alle API RESTful per Principianti",
+		"Come Scegliere tra Vue.js e React",
+		"Git e GitHub: Le Basi per Principianti",
+		"Crea un'Applicazione Web con Vue.js",
+		"WordPress: i 5 migliori Plugin",
+		"Le Ultime Tendenze nel Web Design"
+	]
+}
