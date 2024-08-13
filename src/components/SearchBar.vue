@@ -10,7 +10,7 @@ export default {
 			datasets: { ...datasets, pokedex },
 			selectedDataset: null,
 			searchQuery: '',
-			threshold: 0.2,
+			threshold: 0.3,
 		}
 	},
 	computed: {
@@ -69,6 +69,7 @@ export default {
 					</li>
 				</ul>
 			</div>
+			<!-- regola threshold -->
 			<div class="col-12 col-md-6 mb-3 text-center">
 				<label for="threshold-slider" class="form-label fw-medium">4 . Regola la tolleranza</label>
 				<input type="range" id="threshold-slider" class="form-range" min="0.1" max="0.4" step="0.1" v-model="threshold">
