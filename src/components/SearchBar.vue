@@ -10,7 +10,7 @@ export default {
 			datasets: { ...datasets, pokedex },
 			selectedDataset: null,
 			searchQuery: '',
-			threshold: 0.3,
+			threshold: 0.2,
 		}
 	},
 	computed: {
