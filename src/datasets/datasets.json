@@ -28,7 +28,7 @@
 		"Escursionismo",
 		"Judo"
 	],
-	"Film": [
+	"Generi Film": [
 		"Azione",
 		"Commedia",
 		"Drammatico",
@@ -45,7 +45,7 @@
 		"Storico",
 		"Animazione"
 	],
-	"Musica": [
+	"Generi Musicali": [
 		"Rock",
 		"Pop",
 		"Jazz",
@@ -57,7 +57,7 @@
 		"Elettronica",
 		"Metal"
 	],
-	"ArticoliBlog": [
+	"Articoli Blog": [
 		"Come Aprire il Tuo Sito WordPress",
 		"Design e CSS: guida introduttiva",
 		"Introduzione alle API RESTful per Principianti",

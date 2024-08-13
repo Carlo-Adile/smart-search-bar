@@ -30,8 +30,9 @@ export default {
 			<!-- header -->
 			<div class="col-12 text-center mb-3">
 				<h1>Smart SearchBar</h1>
-				<p class="text-secondary fst-italic fw-medium">
-					Semplifica la ricerca all'interno del tuo Sito Web grazie ad una barra di ricerca smart
+				<p class="text-secondary fst-italic fw-medium px-md-5">
+					Semplifica la ricerca all'interno del tuo Sito Web grazie ad una barra di ricerca smart, progettata
+					per correggere errori di battitura e proporre risultati in base ai caratteri digitati.
 				</p>
 			</div>
 			<!-- scegli un dataset -->
