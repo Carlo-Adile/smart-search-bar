@@ -1,21 +1,23 @@
 <script>
 import Fuse from 'fuse.js';
 import datasets from '../datasets/datasets.json';
+import pokedex from '../datasets/pokedex';
 
 export default {
 	name: 'SearchBar',
 	data() {
 		return {
-			datasets: datasets,
+			datasets: { ...datasets, pokedex },
 			selectedDataset: null,
-			searchQuery: ''
+			searchQuery: '',
+			threshold: 0.3,
 		}
 	},
 	computed: {
 		filteredResults() {
 			const fuse = new Fuse(this.datasets[this.selectedDataset], {
 				includeScore: true,
-				threshold: 0.5,
+				threshold: this.threshold,
 			});
 			const results = fuse.search(this.searchQuery);
 			return results.map(result => result.item);
@@ -28,7 +30,7 @@ export default {
 	<div class="container bg-light rounded-5 mx-auto">
 		<div class="row py-5 px-2 justify-content-center">
 			<!-- header -->
-			<div class="col-12 text-center mb-3">
+			<div class="col-12 col-md-8 text-center mb-3">
 				<h1>Smart SearchBar</h1>
 				<p class="text-secondary fst-italic fw-medium px-md-5">
 					Semplifica la ricerca all'interno del tuo Sito Web grazie ad una barra di ricerca smart, progettata
@@ -47,7 +49,7 @@ export default {
 			</div>
 			<!-- search bar text input -->
 			<div
-				class="col-12 col-md-8 d-flex justify-content-bewteen align-items-center border rounded-pill p-1 shadow-sm mb-2 overflow-hidden">
+				class="col-12 col-md-8 d-flex justify-content-bewteen align-items-center border rounded-pill p-1 shadow-sm mb-4 overflow-hidden">
 				<div class="px-2 d-flex align-items-center w-100">
 					<i class="fa-solid fa-magnifying-glass fs-5 ps-3 text-secondary"></i>
 					<input type="text" autocomplete="off" placeholder=" 2 . Effettua una possibile ricerca"
@@ -55,17 +57,22 @@ export default {
 				</div>
 			</div>
 			<!-- risultati del dataset -->
-			<div class="col-12 col-md-8 mt-2 text-center" v-if="selectedDataset">
-				<p class="mb-2 fw-medium">
-					3 . Ottieni i risultati <span class="text-primary fw-bold">filtrati</span> dall'applicazione
+			<div class="col-12 col-md-8 mb-3 text-center">
+				<p class="mb-3 fw-medium">
+					3 . Ottieni i <span class="text-primary fw-bold">risultati</span> della ricerca
 				</p>
-				<ul class="list-unstyled d-flex flex-wrap gap-2 justify-content-center">
-					<li v-for="(item, index) in datasets[selectedDataset]" :key="index"
-						class="border rounded rounded-pill shadow-sm px-lg-3 px-2 fs-6"
-						:class="{ 'bg-primary text-white': filteredResults.includes(item) }">
+				<ul v-if="selectedDataset && searchQuery.length >= 3"
+					class="list-unstyled d-flex flex-wrap gap-2 justify-content-center">
+					<li v-for="(item, index) in filteredResults" :key="index"
+						class="border rounded rounded-pill shadow-sm px-lg-3 px-2 fs-6 bg-primary text-white">
 						{{ item }}
 					</li>
 				</ul>
+			</div>
+			<div class="col-12 col-md-6 mb-3 text-center">
+				<label for="threshold-slider" class="form-label fw-medium">4 . Regola la tolleranza</label>
+				<input type="range" id="threshold-slider" class="form-range" min="0.1" max="0.4" step="0.1" v-model="threshold">
+				<p>valore attuale - {{ threshold }}</p>
 			</div>
 		</div>
 	</div>
