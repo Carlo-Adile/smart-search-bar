@@ -92,7 +92,7 @@
 		"Folk Metal",
 		"Industrial Metal"
 	],
-	"Articoli Blog": [
+	"Articoli Blog Web Developer": [
 		"Come Aprire il Tuo Sito WordPress",
 		"Design e CSS: guida introduttiva",
 		"Introduzione alle API RESTful per Principianti",
@@ -119,7 +119,8 @@
 		"Introduzione alle Architetture a Microservizi",
 		"Creare e Gestire un Blog con WordPress",
 		"Le Migliori Pratiche di Sicurezza per le Applicazioni Web",
-		"Introduzione al Framework Laravel per PHP",
+		"Il Framework Laravel per PHP",
+		"I vantaggi di PHP come linguaggio back-end",
 		"Come Realizzare un Portfolio Online Professionale",
 		"Tips per Scrivere Codice Manutenibile",
 		"Come Utilizzare le API di Google Maps nel Tuo Progetto",
@@ -188,8 +189,8 @@
 		"Guida alla Creazione di Template Efficaci per Email",
 		"Le Basi delle Tecnologie di Streaming",
 		"Come Creare e Gestire un Forum Online",
-		"Introduzione ai Frameworks per l'Automazione dei Test",
-		"Come Utilizzare le Funzionalità di Google Analytics per Monitorare il Tuo Sito"
+		"Frameworks e Automazione dei Test",
+		"Come Utilizzare Google Analytics per Monitorare il Tuo Sito"
 	],
 	"Ricette di Cucina": [
 		"Spaghetti Carbonara",
@@ -241,6 +242,8 @@
 		"Ravioli al Burro e Salvia",
 		"Frittata con Spinaci",
 		"Pizza Bianca",
-		"Crostini di Fegato"
+		"Crostini di Fegato",
+		"Tortellini in brodo",
+		"Purè di Patate"
 	]
 }

@@ -1,13 +1,13 @@
 <script>
 import Fuse from 'fuse.js';
 import datasets from '../datasets/datasets.json';
-import pokedex from '../datasets/pokedex';
+import Pokèdex from '../datasets/pokedex';
 
 export default {
 	name: 'SearchBar',
 	data() {
 		return {
-			datasets: { ...datasets, pokedex },
+			datasets: { ...datasets, Pokèdex },
 			selectedDataset: null,
 			searchQuery: '',
 			threshold: 0.3,
@@ -72,7 +72,8 @@ export default {
 			<!-- regola threshold -->
 			<div class="col-12 col-md-6 mb-3 text-center">
 				<label for="threshold-slider" class="form-label fw-medium">4 . Regola la tolleranza</label>
-				<input type="range" id="threshold-slider" class="form-range" min="0.1" max="0.4" step="0.1" v-model="threshold">
+				<input type="range" id="threshold-slider" class="form-range" min="0.1" max="0.4" step="0.1"
+					v-model="threshold">
 				<p>valore attuale - {{ threshold }}</p>
 			</div>
 		</div>

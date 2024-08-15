@@ -6069,6 +6069,6 @@ const pokemonData = [
 	}
 ];
 
-const pokedex = pokemonData.map(pokemon => pokemon.name);
+const Pokèdex = pokemonData.map(pokemon => pokemon.name);
 
-export default pokedex;
+export default Pokèdex;
